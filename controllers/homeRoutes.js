@@ -91,9 +91,9 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/post', (req, res) => {
+router.get('/newpost', (req, res) => {
     if (req.session.logged_in) {
-        return res.render('post');
+        return res.render('newpost');
     }
     res.redirect('/login');
 });
@@ -117,7 +117,7 @@ router.get('/updatepost/:id', async (req, res) => {
   
     const post = postData.get({ plain: true });
   
-    res.render('editpost', {
+    res.render('updatepost', {
     ...post,
     logged_in: req.session.logged_in,
     });
