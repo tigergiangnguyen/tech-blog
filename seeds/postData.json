@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Coding",
+        "content": "I used to like coding in my spare time. Now I'm 48, and though I enjoy it, I hardly feel eager to learn yet another way to make my javascript cross platform, implement relational tables or iterate through a list.",
+        "user_id": 1
+    },
+    {
+        "title": "Developers",
+        "content": "Developers that know how to code can easily pick up any language you throw at them.",
+        "user_id": 2
+    }, 
+    {
+        "title": "Googling things is okay",
+        "content": "Don't know how/where to start? Just google it!",
+        "user_id": 3
+    }
+]
