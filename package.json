@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seeds": "node seeds/seeds.js",
+    "seed": "node seeds/seeds.js",
     "dev": "nodemon server.js"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "express-session": "^1.17.3",
     "handlebars": "^4.7.7",
     "mysql2": "^3.2.4",
+    "nodemon": "^2.0.22",
     "sequelize": "^6.31.1"
   },
   "devDependencies": {
