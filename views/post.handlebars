@@ -1,1 +1,28 @@
-<h1>This is the post page!</h1>
+<div class="card">
+    <article>
+    <h1>{{title}}</h1>
+    <p>Created by: {{user.username}} Date: {{format_date createdAt}}</p>
+    <p>{{content}}</p>
+  </article>
+  {{#if logged_in}}
+    <form class="new-comment-form" class="mb-3">
+      <div class="mb-3">
+        <label for="comment" class="form-label">Add Comment:</label>
+        <textarea
+          class="form-control"
+          id="content-new-comment"
+          rows="3"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  {{/if}}
+  <br>
+  <h2>Previous Comments</h2>
+  {{#each comments}}
+    <div class="comment-text">
+      <p>{{comment_text}}</p>
+      <p>Created by: {{user.username}} Date: {{format_date createdAt}}</p>
+    </div>
+  {{/each}}
+</div>
