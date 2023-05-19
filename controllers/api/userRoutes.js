@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { User } = require("../../models");
 const bcrypt = require('bcrypt');
 
+// POST route that takes in data to create a new user
 router.post('/signup', async (req, res) => {
   try {
     const newUserData = new User();
@@ -22,7 +23,8 @@ router.post('/signup', async (req, res) => {
     console.log(err);
   }
 });
-  
+
+// Login the user that already signed up
 router.post('/login', async (req, res) => {
     try {
       const userData = await User.findOne({ where: { username: req.body.username } });
@@ -54,7 +56,8 @@ router.post('/login', async (req, res) => {
       res.status(400).json(err);
     }
 });
-  
+
+// End session
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
