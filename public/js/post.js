@@ -1,3 +1,4 @@
+// Creating a new post
 const newPostFormHandler = async (event) => {
   event.preventDefault();
   
@@ -19,11 +20,13 @@ const newPostFormHandler = async (event) => {
   }
 };
 
+// Get post with id
 const postId = window.location.toString().split('/')
   [
   window.location.toString().split('/').length - 1
   ];
-  
+
+// With the post with id, update post
 const updatePostFormHandler = async (event) => {
   event.preventDefault();
   
