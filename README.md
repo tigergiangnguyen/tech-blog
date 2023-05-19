@@ -1,10 +1,10 @@
 # 14 Model-View-Controller (MVC): Tech Blog
 
-## Your Task
+## Deployed Link of Application
 
-Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
+## Description
 
-Your task this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+In this assignment, the challenge is to build a CMS-style blog site similar to a wordpress site. Developers can publish their blog posts and comment on other developers' posts as well. This will be created from scratch then deployed to Heroku. This application takes a back-end and front-end to satisfied the user story with acceptance criteria. Back-end will be structure with using Model and Controller paradigm to use MySQL2 and Sequelize packages to connect to a database. Front-end will be structure with using Views and handlebars for the client side to show what the users' sees. This is good practices on creating a simple authentification with logins/logouts that saves to your local to understand what's happening.
 
 ## User Story
 
@@ -52,16 +52,44 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
-## Mock-Up
+## Installations
 
-The following animation demonstrates the application functionality:
+These downloads are needed in order to run this application!
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
+ - Visual Studio Code
+ - Node.js
+ - MYSQL
 
-## Getting Started
+These Node Package Manager is what is needed to run the application!
 
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the [express-handlebars](https://www.npmjs.com/package/express-handlebars) package to implement Handlebars.js for your Views, use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
+ - connect-session-sequelize
+ - dotenv
+ - express
+ - express-handlebars
+ - express-session
+ - handlebars
+ - mysql2
+ - sequelize
 
-You’ll also need the [dotenv package](https://www.npmjs.com/package/dotenv) to use environment variables, the [bcrypt package](https://www.npmjs.com/package/bcrypt) to hash passwords, and the [express-session](https://www.npmjs.com/package/express-session) and [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize) packages to add authentication.
+## How to Run Application (If Cloning)
 
-**Note**: The [express-session](https://www.npmjs.com/package/express-session) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
+1. Clone the application then once you open the code in Visual Code, Open in Integrated Terminal by right clicking on server.js
+
+2. In the terminal type "npm i" to install node packages that are required to run the application.
+
+3. Make a connection to your SQL by typing in the terminal "mysql -u root -p" to log in into your MySQL account
+
+4. Run this line of code to create the table "source db/schema.sql;"
+
+5. In the terminal type "npm run seed" to seed your database
+
+6. Finally type in terminal "npm start" to start on a localhost
+
+## Walkthrough Video
+
+![img]()
+Full Video Link:
+
+## Credits
+
+Tiger Nguyen (Me)
