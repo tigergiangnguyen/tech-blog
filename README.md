@@ -2,9 +2,11 @@
 
 ## Deployed Link of Application
 
+[Click me to see the magic!](https://infinite-waters-79215.herokuapp.com/)
+
 ## Description
 
-In this assignment, the challenge is to build a CMS-style blog site similar to a wordpress site. Developers can publish their blog posts and comment on other developers' posts as well. This will be created from scratch then deployed to Heroku. This application takes a back-end and front-end to satisfied the user story with acceptance criteria. Back-end will be structure with using Model and Controller paradigm to use MySQL2 and Sequelize packages to connect to a database. Front-end will be structure with using Views and handlebars for the client side to show what the users' sees. This is good practices on creating a simple authentification with logins/logouts that saves to your local to understand what's happening.
+In this assignment, the challenge is to build a CMS-style blog site similar to a wordpress site. Developers can publish their blog posts and comment on other developers' posts as well. This will be created from scratch then deployed to Heroku. This application takes a back-end and front-end to satisfied the user story with acceptance criteria. Back-end will be structure with using Model and Controller paradigm to use MySQL2 and Sequelize packages to connect to a database. Front-end will be structure with using Views and handlebars for the client side to show what the users' sees. This is good practices on creating a simple authentification with logins/logouts that saves to your local to understand what's happening. All example database are seeded at the time meaning format date will have the exact same dates.
 
 ## User Story
 
@@ -70,6 +72,7 @@ These Node Package Manager is what is needed to run the application!
  - handlebars
  - mysql2
  - sequelize
+ - bcryptjs
 
 ## How to Run Application (If Cloning)
 
@@ -87,9 +90,10 @@ These Node Package Manager is what is needed to run the application!
 
 ## Walkthrough Video
 
-![img]()
-Full Video Link:
+![img](./assets/Demo.gif)
+
+Full Video Link: [Click Here](https://drive.google.com/file/d/1ILAvR_yOqYgsD7bLOqbYetBR4v0weF2H/view)
 
 ## Credits
 
-Tiger Nguyen (Me)
+Contact and connect with me at my [Github](https://github.com/tigergiangnguyen)
